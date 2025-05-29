@@ -4,6 +4,7 @@ import IphoneLogo from "../../assets/img/social.png";
 import SettingIcon from "../../assets/img/setting.png";
 import LaptopIcon from "../../assets/img/laptop.png";
 import ChipsIcon from "../../assets/img/chips.svg";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -19,14 +20,14 @@ const Sidebar = () => {
 
         <ul className="sidebar_sec_inner">
           <li>
-            <a href="#">
+            <Link to="/order-management">
               <div className="menu_item">
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>采购申请管理</h4>
+                <h4>叫貨管理</h4>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">
