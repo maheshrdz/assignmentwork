@@ -9,14 +9,13 @@ const Sidebar = () => {
   return (
     <div className="sidebar_sec">
       <ul className="top_item">
-      <img className="chips" src={ChipsIcon} alt="chips" />
+        <img className="chips" src={ChipsIcon} alt="chips" />
         <li className="main_item">
           <div className="icon">
             <img src={IphoneLogo} alt="" />
           </div>
-          <h4>Purchase Request Management</h4>
+          <h4>采购申请管理</h4>
         </li>
-       
 
         <ul className="sidebar_sec_inner">
           <li>
@@ -25,7 +24,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Purchase Request Management</h4>
+                <h4>采购申请管理</h4>
               </div>
             </a>
           </li>
@@ -35,7 +34,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={SettingIcon} alt="" />
                 </div>
-                <h4>Gas Integration Management</h4>
+                <h4>燃气集成管理</h4>
               </div>
             </a>
           </li>
@@ -45,7 +44,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Sales Operations</h4>
+                <h4>销售运营</h4>
               </div>
             </a>
           </li>
@@ -55,7 +54,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={LaptopIcon} alt="" />
                 </div>
-                <h4>Purchase Operations</h4>
+                <h4>采购运营</h4>
               </div>
             </a>
           </li>
@@ -65,7 +64,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Purchase Request Management</h4>
+                <h4>采购申请管理</h4>
               </div>
             </a>
           </li>
@@ -75,7 +74,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={SettingIcon} alt="" />
                 </div>
-                <h4>Gas Integration Management</h4>
+                <h4>燃气集成管理</h4>
               </div>
             </a>
           </li>
@@ -85,7 +84,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Sales Operations</h4>
+                <h4>销售运营</h4>
               </div>
             </a>
           </li>
@@ -95,7 +94,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={LaptopIcon} alt="" />
                 </div>
-                <h4>Purchase Operations</h4>
+                <h4>采购运营</h4>
               </div>
             </a>
           </li>
@@ -105,7 +104,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Purchase Request Management</h4>
+                <h4>采购申请管理</h4>
               </div>
             </a>
           </li>
@@ -115,7 +114,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={SettingIcon} alt="" />
                 </div>
-                <h4>Gas Integration Management</h4>
+                <h4>燃气集成管理</h4>
               </div>
             </a>
           </li>
@@ -125,7 +124,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Sales Operations</h4>
+                <h4>销售运营</h4>
               </div>
             </a>
           </li>
@@ -135,7 +134,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={LaptopIcon} alt="" />
                 </div>
-                <h4>Purchase Operations</h4>
+                <h4>采购运营</h4>
               </div>
             </a>
           </li>
@@ -145,7 +144,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Purchase Request Management</h4>
+                <h4>采购申请管理</h4>
               </div>
             </a>
           </li>
@@ -155,7 +154,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={SettingIcon} alt="" />
                 </div>
-                <h4>Gas Integration Management</h4>
+                <h4>燃气集成管理</h4>
               </div>
             </a>
           </li>
@@ -165,7 +164,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
-                <h4>Sales Operations</h4>
+                <h4>销售运营</h4>
               </div>
             </a>
           </li>
@@ -175,7 +174,7 @@ const Sidebar = () => {
                 <div className="icon">
                   <img src={LaptopIcon} alt="" />
                 </div>
-                <h4>Purchase Operations</h4>
+                <h4>采购运营</h4>
               </div>
             </a>
           </li>
