@@ -23,63 +23,59 @@ const Header = () => {
         <ul className="primary_nav">
           <li className="tab_shadow">
             <a href="#">
-              <img src={ManageIcon} alt="manage" />{" "}
-              <span>Management System</span>
+              <img src={ManageIcon} alt="manage" /> <span>例行作業</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={DataIcon} alt="manage" /> <span>Routine Tasks</span>
+              <img src={DataIcon} alt="manage" /> <span>基本資料</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={ManageIcon} alt="manage" /> <span> Basic Data</span>
+              <img src={ManageIcon} alt="manage" /> <span> 帳款作業</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={DataIcon} alt="manage" /> <span>Packaging Tasks</span>
+              <img src={DataIcon} alt="manage" /> <span>報表作業</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={ManageIcon} alt="manage" /> <span>General Ledger</span>
+              <img src={ManageIcon} alt="manage" /> <span>系統設定</span>
             </a>
           </li>
         </ul>
         <ul className="secondary_nav ">
           <li className="tab_shadow">
             <a href="#">
-              <img src={ManageIcon} alt="manage" /> <span> Report Tasks</span>
+              <img src={ManageIcon} alt="manage" /> <span> 管理系統</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={DataIcon} alt="manage" /> <span> System Settings</span>
+              <img src={DataIcon} alt="manage" /> <span> 分裝作業</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={ManageIcon} alt="manage" />{" "}
-              <span>Caller ID Display</span>
+              <img src={ManageIcon} alt="manage" /> <span>會計總帳</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={DataIcon} alt="manage" />{" "}
-              <span>Message Notificationq</span>
+              <img src={DataIcon} alt="manage" /> <span>來電顯示◎</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={ManageIcon} alt="manage" /> <span>User</span>
+              <img src={ManageIcon} alt="manage" /> <span>訊息通知</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={DataIcon} alt="manage" />{" "}
-              <span>Manual Incoming Call</span>
+              <img src={DataIcon} alt="manage" /> <span>使用者</span>
             </a>
           </li>
         </ul>
