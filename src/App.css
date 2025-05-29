@@ -84,7 +84,7 @@ ul {
   display: flex;
 }
 .main_sec {
-  width: 80%;
+  width: 84%;
   padding: 20px;
   background: #e9feff;
 }
@@ -236,7 +236,7 @@ td {
 
 /* ===========sidebar css code=============== */
 .sidebar_sec {
-  width: 20%;
+  width: 16%;
   padding: 20px 20px 20px 35px;
   background: #f9fff5;
   position: relative;
