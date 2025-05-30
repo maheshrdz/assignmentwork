@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Layout from './component/layout/Layout';
 import Ordermanagement from './pages/Ordermanagement';
 import Gastruckmanagement from './pages/Gastruckmanagement';
+import Gastruckmanagement from './pages/Gastruckmanagement';
 
 function App() {
   return (
