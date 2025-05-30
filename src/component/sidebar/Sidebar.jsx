@@ -40,7 +40,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/cylinder-operations" href="#">
+            <Link to="/system-program">
               <div className="menu_item">
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />

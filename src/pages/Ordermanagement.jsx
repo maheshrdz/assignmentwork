@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import IphoneLogo from "../assets/img/social.png";
 
 function Ordermanagement() {
@@ -215,4 +215,4 @@ function Ordermanagement() {
   );
 }
 
-export default Ordermanagement
+export default Ordermanagement;

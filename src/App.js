@@ -6,10 +6,13 @@ import Layout from './component/layout/Layout';
 import Ordermanagement from './pages/Ordermanagement';
 import Gastruckmanagement from './pages/Gastruckmanagement';
 import CylinderOperations from './pages/CylinderOperations';
+import SystemProgram from './pages/systemprogram/SystemProgram';
+
 
 function App() {
   return (
     <>
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -23,6 +26,7 @@ function App() {
               path="/cylinder-operations"
               element={<CylinderOperations />}
             />
+            <Route path="/system-program" element={<SystemProgram/>} />
           </Route>
         </Routes>
       </BrowserRouter>

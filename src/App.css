@@ -71,7 +71,7 @@ ul {
 
 /* ==============main css code=========== */
 .inpt_field input {
-  padding: 10px;
+  padding: 5px;
   border: 2px solid #cccccc;
   outline-color: #858585;
   width: 100%;
@@ -118,7 +118,7 @@ ul {
 }
 .full_inpt input {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   outline-color: #858585;
   border: 2px solid #cccccc;
 }
@@ -200,7 +200,7 @@ td {
 .check_box {
   -webkit-appearance: none;
   appearance: none;
-  width: 0px !important;
+  width: 25px !important;
   height: 25px;
   border: 2px solid #555;
   border-radius: 4px;
