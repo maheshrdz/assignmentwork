@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function CylinderOperations() {
+    const [showModal, setShowModal] = useState(false);
   return (
     <div className="main_sec">
+      <button
+        onClick={() => setShowModal(true)}
+        className="bg-blue-600 text-white px-4 py-2 rounded"
+      >
+        Open Popup
+      </button>
       <div className="">
         <div className="max-w-6xl bg-bglightgry border border-borderlgt rounded rounded-[12px] overflow-hidden shadow-md">
           {/* Header */}
@@ -43,16 +50,16 @@ function CylinderOperations() {
             </button>
           </div>
 
-          <div className="grid grid-cols-2 px-2">
-            <div>
-              <div className="flex items-center gap-2 w-full">
+          <div className="grid grid-cols-[70%_30%] px-2">
+            <div className="">
+              <div className="flex items-center gap-2 w-full my-1">
                 {/* 客戶編號 5057 */}
                 <label className="!min-w-0">客戶編號</label>
                 <input
                   type="text"
                   value="5057"
                   readOnly
-                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
                 />
 
                 {/* 客戶實號 仲美媒氣 */}
@@ -60,8 +67,7 @@ function CylinderOperations() {
                 <input
                   type="text"
                   value="仲美媒氣"
-                  readOnly
-                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
                 />
 
                 {/* 月結 checkbox */}
@@ -78,14 +84,14 @@ function CylinderOperations() {
                   <input type="checkbox" className="ml-1" />
                 </div>
               </div>
-              <div className="flex items-center gap-2 w-full">
+              <div className="flex items-center gap-2 w-full my-1">
                 {/* 客戶編號 5057 */}
                 <label className="!min-w-0">客戶編號</label>
                 <input
                   type="text"
                   value="5057"
                   readOnly
-                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
                 />
 
                 {/* 客戶實號 仲美媒氣 */}
@@ -94,15 +100,53 @@ function CylinderOperations() {
                   type="text"
                   value="仲美媒氣"
                   readOnly
-                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
                 />
 
                 {/* 月結 checkbox */}
-                <div className="">
-                  <span className="text-sm">N</span>
-                  <label className="text-sm">月結</label>
-                  <input type="checkbox" className="ml-1" />
-                </div>
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+                {/* 契約 checkbox */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+              </div>
+              <div className="flex items-center gap-2 w-full my-1">
+                {/* 客戶編號 5057 */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+
+                {/* 客戶實號 仲美媒氣 */}
+                <label className="!min-w-0">客戶實號</label>
+                <input
+                  type="text"
+                  value="仲美媒氣"
+                  readOnly
+                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
+                />
+
+                {/* 客戶實號 仲美媒氣 */}
+                <label className="!min-w-0">客戶實號</label>
+                <input
+                  type="text"
+                  value="仲美媒氣"
+                  readOnly
+                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
+                />
 
                 {/* 契約 checkbox */}
                 <div className="">
@@ -110,9 +154,117 @@ function CylinderOperations() {
                   <label className="text-sm">契約</label>
                   <input type="checkbox" className="ml-1" />
                 </div>
+
+                <div>
+                  <label className="text-sm">等級</label>
+                  <select className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen">
+                    <option>五</option>
+                  </select>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 w-full my-1">
+                {/* 客戶編號 5057 */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+
+                {/* 客戶實號 仲美媒氣 */}
+                <label className="!min-w-0">客戶實號</label>
+                <input
+                  type="text"
+                  value="仲美媒氣"
+                  readOnly
+                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
+                />
+
+                {/* 月結 checkbox */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+                {/* 契約 checkbox */}
+                <label className="!min-w-0">客戶編號 </label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+              </div>
+              <div className="flex items-center gap-2 w-full my-1">
+                {/* 客戶編號 5057 */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+
+                {/* 客戶實號 仲美媒氣 */}
+                <label className="!min-w-0">客戶實號</label>
+                <input
+                  type="text"
+                  value="仲美媒氣"
+                  readOnly
+                  className="border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
+                />
+
+                {/* 月結 checkbox */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+                {/* 契約 checkbox */}
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
+              </div>
+              <div className="flex items-center gap-2 w-full my-1">
+                <label className="!min-w-0">巷</label>
+                <input
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  defaultValue="0"
+                />
+                <label className="!min-w-0">弄</label>
+                <input
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  defaultValue="0"
+                />
+                <label className="!min-w-0">號</label>
+                <input
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  defaultValue="0"
+                />
+                <label className="!min-w-0">樓</label>
+                <input
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                  defaultValue="0-0"
+                />
+                <label className="!min-w-0">客戶編號</label>
+                <input
+                  type="text"
+                  value="5057"
+                  readOnly
+                  className="bg-bglightgreen border px-1 w-[100px] bg-[#EFEFEF] border-borderlgt"
+                />
               </div>
             </div>
-            <div className="bg-[#D7D7FE] text-sm pr-4 pl-2 py-1 border border-borderlgt m-[2px]">
+            <div className=" bg-[#D7D7FE] text-sm pr-4 pl-2 py-1 border border-borderlgt m-[2px]">
               {/* Row 1 */}
               <div className="flex items-center mb-1">
                 <label className="!min-w-[70px] !text-left">欠 桶</label>
@@ -257,388 +409,12 @@ function CylinderOperations() {
               <div className="flex items-center mb-1">
                 <label className="!min-w-[70px] !text-left">送 貨 備 註</label>
                 <input
-                  className="border px-1 w-full bg-[#EFEFEF] mr-2 border-borderlgt bg-bglightgreen"
+                  className="border px-1 w-full bg-[#EFEFEF] border-borderlgt bg-bglightgreen"
                   type="text"
                   value="0"
                 />
               </div>
             </div>
-          </div>
-
-          <div className="p-6 bg-white shadow rounded text-sm space-y-4">
-            {/* Top Section */}
-            <div className="grid grid-cols-6 gap-2">
-              <div className="col-span-1">
-                <label className="block">客戶編號</label>
-                <input className="w-full border p-1" defaultValue="5057" />
-              </div>
-              <div className="col-span-2">
-                <label className="block">客戶實號</label>
-                <input className="w-full border p-1" defaultValue="仲美媒氣" />
-              </div>
-              <div className="col-span-1">
-                <label className="block">自訂編號</label>
-                <input className="w-full border p-1" defaultValue="5057" />
-              </div>
-              <div className="col-span-1">
-                <label className="block">類</label>
-                <input className="w-full border p-1" defaultValue="A008" />
-              </div>
-              <div className="col-span-1">
-                <label className="block text-xs">同業</label>
-                <select className="w-full border p-1">
-                  <option>同業</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Contact Details */}
-            <div className="grid grid-cols-6 gap-2">
-              <div>
-                <label className="block">行動電話</label>
-                <input className="w-full border p-1" />
-              </div>
-              <div>
-                <label className="block">電話</label>
-                <input className="w-full border p-1" />
-              </div>
-              <div>
-                <label className="block">聯絡電話</label>
-                <input className="w-full border p-1" />
-              </div>
-              <div>
-                <label className="block">傳真</label>
-                <input className="w-full border p-1" />
-              </div>
-              <div>
-                <label className="block">等級</label>
-                <select className="w-full border p-1">
-                  <option>五</option>
-                </select>
-              </div>
-              <div>
-                <label className="block">查詢編號</label>
-                <input className="w-full border p-1" />
-              </div>
-            </div>
-
-            {/* Address Section */}
-            <div className="grid grid-cols-8 gap-2">
-              <div className="col-span-1">
-                <label className="block">郵遞區號</label>
-                <input className="w-full border p-1" defaultValue="33556" />
-              </div>
-              <div>
-                <label className="block">縣市</label>
-                <input className="w-full border p-1" defaultValue="桃園市" />
-              </div>
-              <div>
-                <label className="block">鄉鎮區</label>
-                <input className="w-full border p-1" defaultValue="中壢區" />
-              </div>
-              <div>
-                <label className="block">街路</label>
-                <input className="w-full border p-1" defaultValue="大漢街" />
-              </div>
-              <div>
-                <label className="block">巷</label>
-                <input className="w-full border p-1" defaultValue="0" />
-              </div>
-              <div>
-                <label className="block">弄</label>
-                <input className="w-full border p-1" defaultValue="0" />
-              </div>
-              <div>
-                <label className="block">號</label>
-                <input className="w-full border p-1" defaultValue="0" />
-              </div>
-              <div>
-                <label className="block">樓</label>
-                <input className="w-full border p-1" defaultValue="0-0" />
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 px-2">
-            <div className="overflow-x-auto my-[2px] border border-borderlgt">
-              <table className="min-w-full">
-                <thead>
-                  <tr className="bg-bgpurple">
-                    <th className="border border-borderdark px-1 py-1 text-sm font-medium text-left"></th>
-                    <th className="border border-borderdark px-2 py-1 text-sm font-medium text-left">
-                      自訂號碼
-                    </th>
-                    <th className="border border-borderdark px-2 py-1 text-sm font-medium text-left">
-                      安裝地點
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="hover:bg-gray-100">
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple">
-                      <i className="fa fa-caret-right" aria-hidden="true"></i>
-                    </td>
-                    <td className="border-tdborder border px-0 py-0 text-sm  bg-white">
-                      <input
-                        className="px-2 py-1 bg-white w-[60px]"
-                        type="text"
-                      />
-                    </td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm text-sm ">
-                      日鑫（康莊路3段651號）
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="bg-[#D7D7FE] text-sm pr-4 pl-2 py-1 border border-borderlgt m-[2px]">
-              {/* Row 1 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">自訂錶號</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="5"
-                  readOnly
-                />
-                <label className="!min-w-0">壓力別</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="中壓"
-                  readOnly
-                />
-              </div>
-
-              {/* Row 2 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">流量表型</label>
-                <input className="border px-1 flex-1" type="text" />
-              </div>
-
-              {/* Row 3 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">安裝地點</label>
-                <input
-                  className="border px-1 flex-1"
-                  type="text"
-                  value="日鑫(康莊路3段651號)"
-                />
-              </div>
-
-              {/* Row 4 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-[56px]">每 度 KG</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="4.91"
-                />
-                <label className="!min-w-0">壓力 係 數 </label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="1.1"
-                />
-                <label className="!min-w-0">流量表</label>
-                <input type="checkbox" checked readOnly />
-              </div>
-
-              {/* Row 5 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">總送貨KG</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="0"
-                />
-                <label className="!min-w-0">已使用KG</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="0"
-                />
-                <label className="!min-w-0">通 知</label>
-                <input type="checkbox" readOnly />
-              </div>
-
-              {/* Row 6 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">平均成本</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="0"
-                />
-                <label className="!min-w-0">流量錶號</label>
-                <input className="border px-1 w-20" type="text" />
-              </div>
-
-              {/* Row 7 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">附註事項</label>
-                <input className="border px-1 flex-1" type="text" />
-              </div>
-
-              {/* Row 8 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">平均度數</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="9.51"
-                />
-                <label className="!min-w-0">流量表商</label>
-                <input className="border px-1 w-20" type="text" />
-              </div>
-
-              {/* Row 9 */}
-              <div className="flex items-center mb-1">
-                <label className="!min-w-0">送貨客戶</label>
-                <input
-                  className="border px-1 w-20 mr-2"
-                  type="text"
-                  value="4203"
-                />
-                <label className="!min-w-0">通 訊 ID</label>
-                <input className="border px-1 w-20" type="text" />
-              </div>
-            </div>
-
-            <div className="overflow-x-auto my-[2px] border border-borderlgt">
-              <table className="min-w-full">
-                <thead>
-                  <tr className="bg-bgpurple">
-                    <th className="border border-borderdark px-1 py-1 text-sm font-medium text-left"></th>
-
-                    <th className="border border-borderdark px-1 py-1 text-sm font-medium text-left">
-                      開始日期
-                    </th>
-                    <th className="border border-borderdark px-1 py-1 text-sm font-medium text-left">
-                      截止日期
-                    </th>
-                    <th className="border border-borderdark px-1 py-1 text-sm font-medium text-left">
-                      單價
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple">
-                      <i className="fa fa-caret-right" aria-hidden="true"></i>
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2024/06/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue  text-sm">
-                      2024/12/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      144.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2022/11/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue text-sm">
-                      2024/05/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      139.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2022/01/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue text-sm">
-                      2022/10/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      135.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2020/12/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue  text-sm">
-                      2021/12/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      135.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2020/11/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue text-sm">
-                      2020/11/30
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      130.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2020/04/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue  text-sm">
-                      2020/09/30
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      117.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2020/03/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue text-sm">
-                      2020/03/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      127.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2019/09/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue  text-sm">
-                      2020/02/29
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      131.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-borderdark border px-1 text-sm  py-1 bg-bgpurple"></td>
-                    <td className="border-tdborder border px-1 py-0 text-red-500 text-sm">
-                      2019/07/01
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-textblue text-sm">
-                      2019/08/31
-                    </td>
-                    <td className="border-tdborder border px-1 py-0 text-sm">
-                      134.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            {/* Right Side */}
           </div>
 
           <div className="mx-2 bg-[#efefef] border border-borderdark">
@@ -695,18 +471,18 @@ function CylinderOperations() {
                 </thead>
                 <tbody>
                   <tr className="hover:bg-gray-100">
-                    <td className="border-borderdark border px-2 py-1 bg-bggreen">
+                    <td className="border-borderdark border border-borderdark px-2 py-1 font-medium text-left text-sm bg-bggreen">
                       <i className="fa fa-caret-right" aria-hidden="true"></i>
                     </td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
-                    <td className="border-tdborder border px-2 py-1 hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
+                    <td className="border-tdborder border border-borderdark px-2 py-1 font-medium text-left text-sm hover:bg-white text-sm"></td>
                   </tr>
                 </tbody>
               </table>
@@ -784,8 +560,145 @@ function CylinderOperations() {
           </div>
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg w-[90%] max-w-3xl overflow-hidden">
+            <div className="flex justify-between items-center w-full">
+              <div className="bg-[#eff3f7] px-2 py-1 flex items-center gap-4 border-b-0 w-full">
+                <div className="font-semibold">流量表預送作業</div>
+
+                <ul className="flex justify-between ml-auto">
+                  <li>
+                    <i className="fa-solid fa-minus"></i>
+                    <i className="fa-regular fa-square mx-5"></i>
+                    <i
+                      className="fa-solid fa-xmark"
+                      onClick={() => setShowModal(false)}
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="overflow-x-auto">
+                <table className="min-w-full">
+                  <thead>
+                    <tr className="bg-[#C0C0BD]">
+                      <th className="text-textblue">B</th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        客戶編號
+                      </th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        客戶實號
+                      </th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        列印地址
+                      </th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        最後交易
+                      </th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        平均天數
+                      </th>
+                      <th className="text-textblue border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        旗
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="text-textblue hover:bg-textblue hover:text-white">
+                      <td></td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        5572
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        雷娜人力
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        大溪區文化路123號之10
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        2024/06/03
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        0
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        N
+                      </td>
+                    </tr>
+                    <tr className="text-textblue hover:bg-textblue hover:text-white">
+                      <td></td>
+                      <td className=" hover:bg-blue hover:text-white border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        5678
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        老爹佬豆漿
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        大溪區仁和路3號
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        2024/06/03
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        2
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        N
+                      </td>
+                    </tr>
+                    <tr className="text-textblue hover:bg-textblue hover:text-white">
+                      <td></td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        5057
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm text-blue-600">
+                        仲美煤氣
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm text-blue-600">
+                        中華區大漢街
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        2024/06/03
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        0
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        N
+                      </td>
+                    </tr>
+                    <tr className="text-textblue hover:bg-textblue hover:text-white">
+                      <td></td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        5059
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        黑熊家
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        大溪區和平路79巷19弄4號
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        2024/06/03
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        77
+                      </td>
+                      <td className=" border border-borderdark px-2 py-1 font-medium text-left text-sm">
+                        N
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
 
-export default CylinderOperations
+export default CylinderOperations;
