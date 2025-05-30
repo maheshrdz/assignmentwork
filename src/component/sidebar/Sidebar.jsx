@@ -50,6 +50,16 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/cylinder-operations">
+              <div className="menu_item">
+                <div className="icon">
+                  <img src={SettingIcon} alt="" />
+                </div>
+                <h4>燃气集成管理</h4>
+              </div>
+            </Link>
+          </li>
+          <li>
             <a href="#">
               <div className="menu_item">
                 <div className="icon">
