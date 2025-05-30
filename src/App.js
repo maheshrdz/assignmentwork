@@ -17,7 +17,10 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/order-management" element={<Ordermanagement />} />
-          
+            <Route
+              path="/gas-truck-management"
+              element={<Gastruckmanagement />}
+            />
             <Route path="/system-program" element={<SystemProgram/>} />
           </Route>
         </Routes>

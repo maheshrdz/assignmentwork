@@ -185,7 +185,7 @@ function Gastruckmanagement() {
                   type="text"
                   value="4203"
                 />
-                <label className="!min-w-0">通  訊 ID</label>
+                <label className="!min-w-0">通 訊 ID</label>
                 <input className="border px-1 w-20" type="text" />
               </div>
             </div>
