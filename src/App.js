@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pages/home/Home';
 import Layout from './component/layout/Layout';
 import Ordermanagement from './pages/Ordermanagement';
-import SystemProgram from './pages/systemprogram/SystemProgram';
+import Gastruckmanagement from './pages/Gastruckmanagement';
 
 function App() {
   return (
@@ -15,6 +15,10 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/order-management" element={<Ordermanagement />} />
+            <Route
+              path="/gas-truck-management"
+              element={<Gastruckmanagement />}
+            />
             <Route path="/system-program" element={<SystemProgram/>} />
           </Route>
         </Routes>

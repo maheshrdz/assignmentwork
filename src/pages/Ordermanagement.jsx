@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import IphoneLogo from "../assets/img/social.png";
 
 function Ordermanagement() {
@@ -9,12 +9,14 @@ function Ordermanagement() {
         叫貨管理
       </h2>
       <div className="">
-        <div className="max-w-6xl bg-[#F1F6F2] border border-[#aeb7b9] rounded rounded-[12px] overflow-hidden shadow-md">
+        <div className="max-w-6xl bg-[#F1F6F2] border border-borderlgt rounded rounded-[12px] overflow-hidden shadow-md">
           {/* Header */}
           <div className="bg-[#eff3f7] px-4 py-1 flex items-center gap-4 border-b">
             <div className="font-semibold">流量表預送作業</div>
-            <div className="text-sm">
-              2024/06/04 AM 10:53 使用者:Admin Server:ASUS15
+            <div className="flex justify-between items-center gap-3">
+              <span>2024/06/04 AM 10:53</span>
+              <span>使用者:Admin</span>
+              <span>Server:ASUS15</span>
             </div>
             <ul className="flex justify-between ml-auto">
               <li>
@@ -23,6 +25,27 @@ function Ordermanagement() {
                 <i className="fa-solid fa-xmark"></i>
               </li>
             </ul>
+          </div>
+
+          <div className="flex space-x-2 bg-blue-100 p-2 border-b mb-2">
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              客戶基本資料
+            </div>
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              公司相關
+            </div>
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              備註事項
+            </div>
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              流量表設定
+            </div>
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              客戶鋼瓶條碼
+            </div>
+            <div className="px-3 py-1 bg-white border rounded cursor-pointer hover:bg-gray-100">
+              客戶鋼瓶條碼(舊)
+            </div>
           </div>
 
           {/* Tab Bar */}
@@ -84,19 +107,29 @@ function Ordermanagement() {
           </div>
 
           {/* Table Header */}
-          <div className="m-2 bg-[#efefef] border border-t-[#b5b5b2]">
+          <div className="m-2 bg-[#efefef] border border-t-[#b5b5b2] border-borderdark">
             <div className="flex gap-8 border-b px-4 py-1 bg-[#efefef]">
               <button className="mr-4">📄 流量表預送</button>
             </div>
             <div className="overflow-x-auto">
               <table className="min-w-full">
                 <thead>
-                  <tr className="bg-[#abcfd1]">
-                    <th className="border border-black px-2 py-1 font-medium">客戶編號</th>
-                    <th className="border border-black px-2 py-1 font-medium">查詢編號</th>
-                    <th className="border border-black px-2 py-1 font-medium">自訂編號</th>
-                    <th className="border border-black px-2 py-1 font-medium">客戶實號</th>
-                    <th className="border border-black px-2 py-1 font-medium">項次</th>
+                  <tr className="bg-bggreen">
+                    <th className="border border-black px-2 py-1 font-medium">
+                      客戶編號
+                    </th>
+                    <th className="border border-black px-2 py-1 font-medium">
+                      查詢編號
+                    </th>
+                    <th className="border border-black px-2 py-1 font-medium">
+                      自訂編號
+                    </th>
+                    <th className="border border-black px-2 py-1 font-medium">
+                      客戶實號
+                    </th>
+                    <th className="border border-black px-2 py-1 font-medium">
+                      項次
+                    </th>
                     <th className="border border-black px-2 py-1 font-medium">
                       流量表型式
                     </th>
@@ -182,4 +215,4 @@ function Ordermanagement() {
   );
 }
 
-export default Ordermanagement
+export default Ordermanagement;
