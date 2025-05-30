@@ -19,6 +19,7 @@ module.exports = {
         textblue: "#3229B0",
         bggreen: "#abcfd1",
         bgyellow: "#FEFEE0",
+        bglightgreen: "#e9feff",
       },
     },
   },

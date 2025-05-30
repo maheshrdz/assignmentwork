@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Layout from './component/layout/Layout';
 import Ordermanagement from './pages/Ordermanagement';
 import Gastruckmanagement from './pages/Gastruckmanagement';
+import CylinderOperations from './pages/CylinderOperations';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
             <Route
               path="/gas-truck-management"
               element={<Gastruckmanagement />}
+            />
+            <Route
+              path="/cylinder-operations"
+              element={<CylinderOperations />}
             />
           </Route>
         </Routes>
