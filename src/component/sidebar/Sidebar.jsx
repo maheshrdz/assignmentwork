@@ -40,14 +40,14 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <Link to="/system-program">
               <div className="menu_item">
                 <div className="icon">
                   <img src={IphoneLogo} alt="" />
                 </div>
                 <h4>销售运营</h4>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">
