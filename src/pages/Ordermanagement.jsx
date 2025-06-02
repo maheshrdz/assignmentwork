@@ -1,5 +1,5 @@
 import React from "react";
-import IphoneLogo from "../assets/img/social.png";
+import IphoneLogo from "../assets/img/header/head-icon.png";
 
 function Ordermanagement() {
   return (
