@@ -17,7 +17,7 @@ function Gastruckmanagement() {
               <li>
                 <i className="fa-solid fa-minus"></i>
                 <i className="fa-regular fa-square mx-5"></i>
-                <i className="fa-solid fa-xmark"></i>
+                <i className="fa-solid fa-xmark cursor-pointer"></i>
               </li>
             </ul>
           </div>
