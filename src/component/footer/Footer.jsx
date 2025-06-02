@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="foot_sec bg-[#efefef]  border-2 border-borderlight">
       <table className="border-borderdark border">
         <tr>
-          <td className="border-borderdark border text-blue">公司: WL 萬隆液化石油氣股份有限公司</td>
+          <td className="border-borderdark border text-blue">公司: WL 萬隆液化石油氣股份有限公司</td>  
           <td className="border-borderdark border text-blue">2024/06/04 10:01</td>
           <td className="border-borderdark border text-textblue"> 3872333</td>
           <td className="border-borderdark border text-green">大溪區復興路190巷1弄6號</td>
